@@ -48,12 +48,6 @@ Lint @cdtn/frontend:
   script:
     - yarn workspace @cdt/frontend lint
 
-Lint @cdtn/data:
-  <<: *quality_stage
-  <<: *master_based_stage
-  script:
-    - yarn workspace @cdt/data lint
-
 Lint Dockerfiles:
   <<: *quality_stage
   image: hadolint/hadolint:latest-debian
@@ -112,13 +106,6 @@ Test @cdtn/api:
       [ "$retry" -eq "-1" ] && exit 1
     #
     - yarn workspace @cdt/api test --coverage
-
-Test @cdtn/data:
-  <<: *quality_stage
-  <<: *master_based_stage
-  script:
-    - yarn workspace @cdt/data test
-    - yarn workspace @cdt/data check-slugs
 
 Test @cdtn/frontend SDR data:
   <<: *quality_stage
