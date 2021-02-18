@@ -30,4 +30,3 @@ stages:
   - "Registration"
   - "Deploy"
   - "Notify Finished Deployment"
-  # - "Update ES data"
