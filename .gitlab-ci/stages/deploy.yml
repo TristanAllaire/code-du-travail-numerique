@@ -96,6 +96,7 @@ Deploy @cdtn/api (dev):
     - .deploy_api_stage
     - .dev_stage
   variables:
+    ES_INDEX_PREFIX: cdtn-dev-douglasduteil-feat-data-migrate-data-package
     HELM_RENDER_ARGS: >-
       --set autoscaling.enabled=false
       --set deployment.resources.requests.memory=256Mi
