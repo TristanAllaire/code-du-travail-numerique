@@ -1,9 +1,9 @@
-import data from "@cdt/data...prime-precarite/precarite.data.json";
+import data from "@cdtn/prime-precarite/precarite.data.json";
 
 import { getSituationsFor } from "../../../common/situations.utils";
 import { isNotYetProcessed, validateSituation } from "../situation";
 
-jest.mock("@cdt/data...prime-precarite/precarite.data.json", () => [
+jest.mock("@cdtn/prime-precarite/precarite.data.json", () => [
   { criteria: { cddType: "1| foo", hasCdiProposal: "baz" }, idcc: 10 },
   { criteria: { cddType: "1| foo", hasCdiRenewal: "bar" }, idcc: 10 },
   { criteria: { cddType: "2| baz" }, idcc: 10 },

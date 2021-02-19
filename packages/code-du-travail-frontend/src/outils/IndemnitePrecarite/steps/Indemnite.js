@@ -1,4 +1,4 @@
-import data from "@cdt/data...prime-precarite/precarite.data.json";
+import data from "@cdtn/prime-precarite/precarite.data.json";
 import { Alert, theme } from "@socialgouv/cdtn-ui";
 import Link from "next/link";
 import React from "react";

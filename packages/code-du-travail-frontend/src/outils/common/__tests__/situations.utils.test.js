@@ -1,4 +1,4 @@
-import data from "@cdt/data...prime-precarite/precarite.data.json";
+import data from "@cdtn/prime-precarite/precarite.data.json";
 
 import {
   filterSituations,
@@ -13,7 +13,7 @@ import {
 
 const criteriaOrder = ["bar", "foo", "baz", "yolo"];
 
-jest.mock("@cdt/data...prime-precarite/precarite.data.json", () => [
+jest.mock("@cdtn/prime-precarite/precarite.data.json", () => [
   { criteria: { bar: "baz", foo: "1| foo" }, idcc: "10" },
   { criteria: { bar: "bar", foo: "1| foo" }, idcc: "10" },
   { criteria: { bar: "baz", foo: "2| baz" }, idcc: "10" },
