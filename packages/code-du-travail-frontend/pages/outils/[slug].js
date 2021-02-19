@@ -1,4 +1,4 @@
-import tools from "@cdt/data...tools/internals.json";
+import tools from "@cdtn/tools/internals.json";
 import * as Sentry from "@sentry/browser";
 import { Container, Section, theme, Wrapper } from "@socialgouv/cdtn-ui";
 import getConfig from "next/config";
