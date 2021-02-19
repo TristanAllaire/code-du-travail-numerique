@@ -1,4 +1,4 @@
-import data from "@cdt/data...simulateurs/preavis-licenciement.data.json";
+import data from "@cdtn/simulateurs/preavis-licenciement.data.json";
 import { Toast } from "@socialgouv/cdtn-ui";
 import Link from "next/link";
 import React from "react";

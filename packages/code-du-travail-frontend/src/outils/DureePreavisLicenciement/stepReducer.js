@@ -1,4 +1,4 @@
-import data from "@cdt/data...simulateurs/preavis-licenciement.data.json";
+import data from "@cdtn/simulateurs/preavis-licenciement.data.json";
 
 import { isNotYetProcessed } from "../common/situations.utils";
 import { StepInformations } from "./steps/Informations";

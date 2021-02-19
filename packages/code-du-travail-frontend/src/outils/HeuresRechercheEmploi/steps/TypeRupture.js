@@ -1,4 +1,4 @@
-import data from "@cdt/data...simulateurs/heures-recherche-emploi.data.json";
+import data from "@cdtn/simulateurs/heures-recherche-emploi.data.json";
 import React, { useEffect } from "react";
 
 import { SelectQuestion } from "../../common/SelectQuestion";

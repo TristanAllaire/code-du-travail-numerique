@@ -1,0 +1,19 @@
+{
+  "name": "@cdtn/simulateurs",
+  "version": "4.31.1",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SocialGouv/code-du-travail-numerique.git",
+    "directory": "packages/simulateurs"
+  },
+  "scripts": {
+    "start": "node -r esm index.js "
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "google-spreadsheets": "^2.0.0"
+  }
+}

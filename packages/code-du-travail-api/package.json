@@ -40,7 +40,6 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@cdt/data": "^4.44.1",
     "@socialgouv/eslint-config-recommended": "^1.49.0",
     "@zeit/ncc": "^0.22.3",
     "eslint": "^7.19.0",

@@ -1,4 +1,4 @@
-import data from "@cdt/data...simulateurs/preavis-demission.data.json";
+import data from "@cdtn/simulateurs/preavis-demission.data.json";
 import { getRouteBySource, SOURCES } from "@socialgouv/cdtn-sources";
 import { Toast } from "@socialgouv/cdtn-ui";
 import Link from "next/link";
