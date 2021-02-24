@@ -22,7 +22,6 @@ COPY ./packages/prime-precarite/package.json /app/packages/prime-precarite/packa
 COPY ./packages/react-fiche-service-public/package.json /app/packages/react-fiche-service-public/package.json
 COPY ./packages/simulateurs/package.json /app/packages/simulateurs/package.json
 COPY ./packages/slugify/package.json /app/packages/slugify/package.json
-COPY ./packages/slugify/package.json /app/packages/slugify/package.json
 COPY ./packages/sources/package.json /app/packages/sources/package.json
 COPY ./packages/vectorizer/package.json /app/packages/vectorizer/package.json
 
