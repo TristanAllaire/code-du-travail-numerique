@@ -1,4 +1,4 @@
-const { vectorizeQuery } = require("@cdt/data/indexing/vectorizer");
+const { vectorizeQuery } = require("@cdtn/vectorizer");
 const {
   santeVector,
   demissionVector,
@@ -7,7 +7,7 @@ const {
 } = require("./vectors");
 
 // mock fetch function to return vector for démission
-jest.mock("@cdt/data/indexing/vectorizer");
+jest.mock("@cdtn/vectorizer");
 vectorizeQuery.mockImplementation((req) => {
   let data;
   switch (req) {

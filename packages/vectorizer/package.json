@@ -1,0 +1,20 @@
+{
+  "name": "@cdtn/vectorizer",
+  "version": "4.44.0",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SocialGouv/code-du-travail-numerique.git",
+    "directory": "packages/vectorizer"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "@cdtn/stopwords": "^4.31.0",
+    "node-fetch": "^2.6.1"
+  }
+}
