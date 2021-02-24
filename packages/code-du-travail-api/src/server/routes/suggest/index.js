@@ -1,5 +1,5 @@
 const Router = require("koa-router");
-const { SUGGESTIONS } = require("@cdt/data/indexing/esIndexName");
+const { SUGGESTIONS } = require("../../conf/esIndexName");
 
 const API_BASE_URL = require("../v1.prefix");
 const elasticsearchClient = require("../../conf/elasticsearch.js");

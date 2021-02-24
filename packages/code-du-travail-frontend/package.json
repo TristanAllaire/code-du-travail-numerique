@@ -19,7 +19,7 @@
     "generate-sitemap": "node -r esm ./scripts/generate-sitemap"
   },
   "dependencies": {
-    "@cdt/data": "^4.44.1",
+    "@cdtn/conventions": "^4.44.0",
     "@cdtn/prime-precarite": "^4.31.1",
     "@cdtn/simulateurs": "^4.31.1",
     "@cdtn/tools": "^4.43.0",

@@ -1,4 +1,4 @@
-import { formatIdcc } from "@cdt/data";
+import { formatIdcc } from "@cdtn/conventions";
 import { theme } from "@socialgouv/cdtn-ui";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";

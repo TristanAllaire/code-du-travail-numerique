@@ -15,10 +15,16 @@ COPY ./scripts /app/scripts
 COPY ./package.json /app/package.json
 COPY ./yarn.lock /app/yarn.lock
 
+COPY ./packages/conventions/package.json /app/packages/conventions/package.json
+COPY ./packages/elasticsearch-mapping/package.json /app/packages/elasticsearch-mapping/package.json
+COPY ./packages/elasticsearch-utils/package.json /app/packages/elasticsearch-utils/package.json
+COPY ./packages/prime-precarite/package.json /app/packages/prime-precarite/package.json
 COPY ./packages/react-fiche-service-public/package.json /app/packages/react-fiche-service-public/package.json
-COPY ./packages/sources/package.json /app/packages/sources/package.json
+COPY ./packages/simulateurs/package.json /app/packages/simulateurs/package.json
 COPY ./packages/slugify/package.json /app/packages/slugify/package.json
-
+COPY ./packages/slugify/package.json /app/packages/slugify/package.json
+COPY ./packages/sources/package.json /app/packages/sources/package.json
+COPY ./packages/vectorizer/package.json /app/packages/vectorizer/package.json
 
 # PERF(douglasduteil): put packages that are more likely to change in order here
 # By order of "more likely to change" the frontend, the api, etc... are changing

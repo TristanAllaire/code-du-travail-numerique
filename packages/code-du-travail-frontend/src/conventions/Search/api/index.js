@@ -1,4 +1,4 @@
-import { parseIdcc } from "@cdt/data";
+import { parseIdcc } from "@cdtn/conventions";
 
 import { searchConvention } from "./convention.service";
 import {

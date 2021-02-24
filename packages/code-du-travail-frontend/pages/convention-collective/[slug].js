@@ -1,4 +1,4 @@
-import { formatIdcc } from "@cdt/data";
+import { formatIdcc } from "@cdtn/conventions";
 import { getRouteBySource, SOURCES } from "@socialgouv/cdtn-sources";
 import { Text } from "@socialgouv/cdtn-ui";
 import { format, parseISO } from "date-fns";

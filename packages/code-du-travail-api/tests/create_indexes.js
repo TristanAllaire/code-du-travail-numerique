@@ -1,11 +1,11 @@
-import { documentMapping } from "@cdt/data/indexing/document.mapping";
+
 import {
   createIndex,
   indexDocumentsBatched,
   version,
-} from "@cdt/data/indexing/esClientUtils";
-import { DOCUMENTS, SUGGESTIONS } from "@cdt/data/indexing/esIndexName";
-import { suggestionMapping } from "@cdt/data/indexing/suggestion.mapping";
+} from "@cdtn/elasticsearch-utils";
+import { DOCUMENTS, SUGGESTIONS } from "../src/server/conf/esIndexName";
+import { documentMapping, suggestionMapping } from "@cdtn/elasticsearch-mapping";
 
 import client from "../src/server/conf/elasticsearch";
 import documents from "./cdtn_document.data.json";

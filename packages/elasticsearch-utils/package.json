@@ -1,5 +1,5 @@
 {
-  "name": "@socialgouv/cdtn-slugify",
+  "name": "@cdtn/elasticsearch-utils",
   "version": "4.44.0",
   "main": "index.js",
   "license": "MIT",

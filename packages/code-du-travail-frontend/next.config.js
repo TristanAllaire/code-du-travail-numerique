@@ -1,14 +1,17 @@
 const withSourceMaps = require("@zeit/next-source-maps");
 
 const withTranspileModule = require("next-transpile-modules")([
-  "@socialgouv/cdtn-sources",
+  "@cdtn/conventions",
+  "@cdtn/prime-precarite",
+  "@cdtn/simulateurs",
+  "@cdtn/tools",
   "@socialgouv/cdtn-slugify",
-  "@cdt/data",
+  "@socialgouv/cdtn-sources",
+  "is-plain-obj",
   "lit-element",
   "lit-html",
-  "parse5",
   "p-debounce",
-  "is-plain-obj",
+  "parse5",
 ]);
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",

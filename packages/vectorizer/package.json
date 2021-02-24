@@ -1,6 +1,7 @@
 {
   "name": "@cdtn/vectorizer",
   "version": "4.44.0",
+  "private": true,
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {

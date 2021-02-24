@@ -1,4 +1,4 @@
-import { formatIdcc } from "@cdt/data";
+import { formatIdcc } from "@cdtn/conventions";
 import slugify from "@socialgouv/cdtn-slugify";
 import { Button, theme } from "@socialgouv/cdtn-ui";
 import Link from "next/link";

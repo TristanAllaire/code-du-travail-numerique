@@ -14,6 +14,7 @@
     "dev:frontend": "yarn workspace @cdt/frontend dev",
     "k8s": "yarn --silent --cwd .k8s",
     "lint": "lerna run lint",
+    "lint:fix": "lerna run lint",
     "start": "lerna run start",
     "test": "lerna run test",
     "jest:ui": "yarn workspace @cdt/frontend test -u && yarn workspace @socialgouv/react-fiche-service-public jest -u && yarn workspace @socialgouv/cdtn-ui jest -u"

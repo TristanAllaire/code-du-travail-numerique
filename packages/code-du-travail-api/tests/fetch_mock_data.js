@@ -1,4 +1,4 @@
-import { DOCUMENTS } from "@cdt/data/indexing/esIndexName";
+import { DOCUMENTS } from "../src/server/conf/esIndexName";
 import { Client } from "@elastic/elasticsearch";
 import { getSourceByRoute, SOURCES } from "@socialgouv/cdtn-sources";
 import { writeFile as _writeFile } from "fs";
