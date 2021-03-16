@@ -1,0 +1,39 @@
+overwrite: true
+schema: "http://localhost:8080/v1/graphql"
+documents:
+  - ../../modules/ingester/src/queries/*.graphql.ts
+generates:
+  src/__generated__/index.ts:
+    config:
+      addUnderscoreToArgsType: false
+      immutableTypes: true
+      onlyOperationTypes: true
+      preResolveTypes: true
+      useTypeImports: true
+    plugins:
+      - typescript
+      - add:
+          content: |
+            /* eslint-disable */
+          placement: "prepend"
+  src/__generated__/:
+    config:
+      addUnderscoreToArgsType: false
+      immutableTypes: true
+      onlyOperationTypes: true
+      preResolveTypes: true
+    plugins:
+      - typescript-operations
+      - add:
+          content: |
+            /* eslint-disable */
+          placement: "prepend"
+    preset: near-operation-file
+    presetConfig:
+      extension: .type.ts
+      folder: __generated__
+      baseTypesPath: "~@socialgouv/cdtn...infra...hasura"
+      importAllFragmentsFrom: "~@socialgouv/cdtn...infra...hasura"
+hooks:
+  afterAllFileWrite:
+    - prettier --write
