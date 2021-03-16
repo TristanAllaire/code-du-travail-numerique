@@ -3,7 +3,10 @@
   "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
+    "declarationMap": true,
+    "moduleResolution": "node",
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "src",
+    "types": ["jest"]
   }
 }

@@ -40,3 +40,16 @@ stages:
     include:
       - local: /infra/logger/.gitlab-ci.yml
     strategy: depend
+  variables:
+    PARENT_PIPELINE_ID: $CI_PIPELINE_ID
+
+"@socialgouv/cdtn-elasticsearch":
+  stage: Code Quality
+  needs:
+    - job: "@socialgouv/cdtn-logger"
+      artifacts: true
+  trigger:
+    include:
+      - local: /infra/elasticsearch/.gitlab-ci.yml
+  variables:
+    PARENT_PIPELINE_ID: $CI_PIPELINE_ID

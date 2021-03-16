@@ -97,7 +97,3 @@ Test:
       artifacts: true
   script:
     - yarn test
-  artifacts:
-    expire_in: 1 week
-    paths:
-      - infra/logger/lib
