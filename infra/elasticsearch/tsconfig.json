@@ -8,6 +8,6 @@
     "moduleResolution": "node",
     "outDir": "lib",
     "rootDir": "src",
-    "types": []
+    "types": ["jest"]
   }
 }
