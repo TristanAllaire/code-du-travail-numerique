@@ -1,10 +1,10 @@
 //
 
-import type {Client} from "@elastic/elasticsearch";
-import {logger as cdtnLoggger} from "@socialgouv/cdtn-logger";
+import type { Client } from "@elastic/elasticsearch";
+import { logger as cdtnLoggger } from "@socialgouv/cdtn-logger";
 
-import {analyzer, char_filter, filter, tokenizer} from "./analysis";
-import type {Document} from "./types";
+import { analyzer, char_filter, filter, tokenizer } from "./analysis";
+import type { Document } from "./types";
 
 //
 

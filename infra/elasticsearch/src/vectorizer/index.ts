@@ -2,7 +2,7 @@
 
 import fetch from "node-fetch";
 
-import {stopwords} from "../dataset/stop_words";
+import { stopwords } from "../dataset/stop_words";
 // URL of the TF serve deployment
 
 function stripAccents(text: string) {
