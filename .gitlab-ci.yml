@@ -14,6 +14,7 @@ include:
     ref: v20.7.11
 
   #
+
   - /.gitlab-ci/variables.yml
   - /.gitlab-ci/stages/quality.yml
   - /.gitlab-ci/stages/register.yml
@@ -24,6 +25,16 @@ include:
   - /.gitlab-ci/stages/e2e.yml
   - /.gitlab-ci/stages/storage.yml
 
+  #
+
+  - /infra/logger/.gitlab-ci.yml
+
+variables:
+  GIT_STRATEGY: fetch
+  GIT_DEPTH: 3
+  #
+  MONOREPO_CACHE_FOLDER: ${CI_PROJECT_DIR}/.cache/monorepo
+
 stages:
   - "Prepare"
   - "Code Quality"
@@ -32,11 +43,14 @@ stages:
   - "Notify Finished Deployment"
   # - "Update ES data"
 
-#
 
-"@socialgouv/cdtn-logger":
-  stage: Prepare
-  trigger:
-    include:
-      - local: /infra/logger/.gitlab-ci.yml
-    strategy: depend
+.base_stage:
+  dependencies: []
+  rules:
+    - if: $PRODUCTION
+      when: never
+    - if: $UPDATE_ES_INDEX
+      when: never
+    - if: $CI_COMMIT_MESSAGE =~ /^chore(release):*/
+      when: never
+    - when: always
