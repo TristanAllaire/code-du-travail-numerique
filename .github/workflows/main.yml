@@ -34,11 +34,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      - name: semgrep-action
-        # You may pin to the exact commit or the version.
-        # uses: returntocorp/semgrep-action@fb0785fa1750d64de0bc4925414781c1c9148852
-        uses: returntocorp/semgrep-action@v1
-        with:
-          # Rules and patterns to search for with semgrep.
-          config: p/javascript
